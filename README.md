@@ -7,16 +7,18 @@ With NablaNet.jl you can quickly build fully-connected neural networks.
 NablaNet.jl provides methods for fast and allocation-free evaluations of the neural network for a given input and given parameters.
 It also provides methods for fast and allocation-free computations of the Jacobians of the output with respect to the input and the network parameters.
 
-```
-# create a fully connected neural network with nonlinear activations
 
+## Create a fully connected neural network with nonlinear activations
+```
 ## Dimensions
 # input size = 3
 ni = 3
 # final output size = 4
 no = 4
+```
 
 ## Neural Network
+```
 # generate a random input and some random parameters
 xi = rand(ni)
 # create neural network with 4 fully connected layers of sizes 6, 2, 3, no
@@ -24,20 +26,22 @@ xi = rand(ni)
 net = Net(ni, no, dim_layers=[6,2,3], activations=[x->tanh.(x), x->tanh.(x), x->tanh.(x), x->x])
 # generate a random input and some random parameters
 θ = rand(NablaNet.parameter_dimension(net))
-
+```
 ## Computations and Gradients
-# evaluate the output of the neural network for given input and parameters
+### Evaluate the output of the neural network for given input and parameters
+```
 evaluation!(net, xi, θ)
 get_output(net)
-
-# Jacobian of the output with respect ot the input
+```
+### Jacobian of the output with respect ot the input
+```
 jacobian_input!(net, xi, θ)
 net.jacobian_input
-
-# Jacobian of the output with respect ot the input
+```
+### Jacobian of the output with respect ot the input
+```
 jacobian_parameters!(net, xi, θ)
 net.jacobian_parameters
-
 ```
 
 
