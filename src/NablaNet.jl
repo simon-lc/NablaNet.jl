@@ -1,4 +1,4 @@
-module DiffNet
+module NablaNet
 
 using LinearAlgebra
 using Random

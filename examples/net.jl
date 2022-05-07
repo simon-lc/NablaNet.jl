@@ -13,7 +13,7 @@ xi = rand(ni)
 # the activation functions are tanh, tanh, tanh, and identity for the last layer
 net = Net(ni, no, dim_layers=[6,2,3], activations=[x->tanh.(x), x->tanh.(x), x->tanh.(x), x->x])
 # generate a random input and some random parameters
-θ = rand(DiffNet.parameter_dimension(net))
+θ = rand(NablaNet.parameter_dimension(net))
 
 ## Computations and Gradients
 # evaluate the output of the neural network for given input and parameters
