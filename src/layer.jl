@@ -22,9 +22,9 @@ end
 function Layer(ni, no, activation)
     nθ = no * (ni + 1)
 
-    xi_ = Symbolics.variables(:xi_, 1:ni)
-    xm_ = Symbolics.variables(:xm_, 1:no)
-    θ_ = Symbolics.variables(:θ_, 1:nθ)
+    @variables xi_[1:ni]
+    @variables xm_[1:no]
+    @variables θ_[1:nθ]
     xm = evaluation(ni, no, xi_, θ_)
     xo = activation(xm_)
     ∂xm∂xi = Symbolics.jacobian(xm, xi_)

@@ -9,5 +9,5 @@ Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 
 [compat]
-Symbolics = "4.4.3 - 4.4.3"
 julia = "1.6, 1.7"
+Symbolics = "0.1.29, 0.1.29"
