@@ -5,7 +5,7 @@
 
 With DiffNet.jl you can quickly build fully-connected neural networks. 
 DiffNet.jl provides methods for fast and allocation-free evaluations of the neural network for a given input and given parameters. 
-It also provides methods for fast and allocation-free computations of the Jacobians of the output wih respect to the input and the network parameters. 
+It also provides methods for fast and allocation-free computations of the Jacobians of the output with respect to the input and the network parameters. 
 
 ```
 # create a fully connected neural network with nonlinear activations
