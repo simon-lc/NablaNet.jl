@@ -3,9 +3,9 @@
 [![CI](https://github.com/simon-lc/DiffNet.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/simon-lc/DiffNet.jl/actions/workflows/CI.yml)
 [![codecov](https://codecov.io/gh/simon-lc/DiffNet.jl/branch/main/graph/badge.svg?token=CHJNI2LRNZ)](https://codecov.io/gh/simon-lc/DiffNet.jl)
 
-With DiffNet.jl you can quickly build fully connected neural networks. 
-DiffNet.jl provides methods for fast and allocation-free evaluation of the neural network for a given input and given parameters. 
-It also provides methods for fast and allocation-free computation of the Jacobians of the output wih respect to the input and the parameters. 
+With DiffNet.jl you can quickly build fully-connected neural networks. 
+DiffNet.jl provides methods for fast and allocation-free evaluations of the neural network for a given input and given parameters. 
+It also provides methods for fast and allocation-free computations of the Jacobians of the output wih respect to the input and the network parameters. 
 
 ```
 # create a fully connected neural network with nonlinear activations
