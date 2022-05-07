@@ -1,7 +1,11 @@
 # NablaNet.jl
-With NablaNet.jl you can quickly build fully connected neural networks. 
-NablaNet.jl provides methods for fast and allocation-free evaluation of the neural network for a given input and given parameters. 
-It also provides methods for fast and allocation-free computation of the Jacobians of the output wih respect to the input and the parameters. 
+
+[![CI](https://github.com/simon-lc/NablaNet.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/simon-lc/NablaNet.jl/actions/workflows/CI.yml)
+[![codecov](https://codecov.io/gh/simon-lc/NablaNet.jl/branch/main/graph/badge.svg?token=CHJNI2LRNZ)](https://codecov.io/gh/simon-lc/NablaNet.jl)
+
+With NablaNet.jl you can quickly build fully-connected neural networks.
+NablaNet.jl provides methods for fast and allocation-free evaluations of the neural network for a given input and given parameters.
+It also provides methods for fast and allocation-free computations of the Jacobians of the output with respect to the input and the network parameters.
 
 ```
 # create a fully connected neural network with nonlinear activations
